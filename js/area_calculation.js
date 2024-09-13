@@ -15,4 +15,20 @@ function calculateTriangleArea(){
 
 }
 
+function calculateRectangleArea(){
+   const widthField = document.getElementById('width-field');
+   const widthValueField = widthField.value;
+   const width = parseFloat(widthValueField);
+
+   const lengthField = document.getElementById('Length-field');
+   const lengthValueField = lengthField.value;
+   const Length = parseFloat(lengthValueField);
+
+   const area = width*Length
+
+   const rareaSpan = document.getElementById('total-rarea');
+   rareaSpan.innerText = area;
+   
+}
+
 
