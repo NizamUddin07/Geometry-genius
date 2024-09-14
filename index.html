@@ -64,11 +64,20 @@
           <figure>
             <img src="images/parallelogram.png" alt="rectangle" />
           </figure>
-          <div class="card-body">
+          <div class="card-body items-center">
             <h2 class="card-title">Parallelogram</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+            <h4>Area (A) = base x height</h4>
+            <div class="flex items-center mb-5">
+              <input class="w-20 h-8 px-4 border-[#F1F1F1] bg-slate-200 rounded" type="text" id="parallelogram-base" placeholder="base"> <span
+                class="ml-4 mr-4">CM</span>
+              <input class="w-20 h-8 px-4 border-b-gray-200 bg-slate-200 rounded" type="text" placeholder="parallelogram-height" id="parallelogram-height"><span
+                class="ml-5">CM</span>
+            </div>
+            <div class="w-full">
+              <p    class="text-xl font-bold ">Area: <span id="parallelogram-area"></span> </p>
+            </div>
+            <div class="card-actions w-full ">
+              <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
